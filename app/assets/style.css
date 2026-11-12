@@ -1,3 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html, body, #__nuxt {
+  min-height: 100vh;
+  background-color: #575352; 
+  margin: 0;
+  padding: 0;
+}
+
+
 body{
     background-color: rgb(75, 72, 72);
     font-family: "Akt", sans-serif;

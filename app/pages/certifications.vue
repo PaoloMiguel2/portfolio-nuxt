@@ -2,7 +2,7 @@
 import { onMounted } from 'vue'
 import { imageView } from '~/assets/script.js';
 onMounted(() => {
-  setupNavbar()
+   imageView()
 })
 </script>
 
@@ -16,21 +16,21 @@ onMounted(() => {
     <div id="certifications-container" class="mt-[-100px]">
 
         <div id="certifications-card" class="java-certif">
-        <img class="image-certifications cursor-pointer" src="/images/java_cert.png" @click="openModal('/images/java_cert.png')">
+        <img class="image-certifications cursor-pointer" src="/images/java_cert.png">
         <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">
             <h1 class="border-[1px] text-center mt-[20px] bg-[rgb(17,17,18)] p-2 hover:bg-[rgba(187,193,199,0.46)]">VERIFY</h1>
         </a>
     </div>
 
     <div id="certifications-card" class="word-certif">
-        <img class="image-certifications cursor-pointer" src="/images/word_cert.png" @click="openModal('/images/word_cert.png')">
+        <img class="image-certifications cursor-pointer" src="/images/word_cert.png">
         <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">
             <h1 class="border-[1px] text-center mt-[20px] bg-[rgb(17,17,18)] p-2 hover:bg-[rgba(187,193,199,0.46)]">VERIFY</h1>
         </a>
     </div>
 
     <div id="certifications-card" class="excel-certif">
-        <img class="image-certifications cursor-pointer" src="/images/excel_cert.png" @click="openModal('/images/excel_cert.png')">
+        <img class="image-certifications cursor-pointer" src="/images/excel_cert.png">
         <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">
             <h1 class="border-[1px] text-center mt-[20px] bg-[rgb(17,17,18)] p-2 hover:bg-[rgba(187,193,199,0.46)]">VERIFY</h1>
         </a>

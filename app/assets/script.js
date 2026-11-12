@@ -10,17 +10,19 @@ burg.addEventListener("click", () => {
 
 
 
-export function imageView(){
-const modal = document.getElementById("imageModal");
-            const modalImg = document.getElementById("modalImg");
+export function imageView() {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
 
-            function openModal(src) {
-            modal.classList.remove("hidden");
-            modalImg.src = src;
-            }
+  document.querySelectorAll(".image-certifications").forEach((img) => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modal.classList.remove("hidden");
+    });
+  });
 
-            modal.addEventListener("click", () => {
-            modal.classList.add("hidden");
-            });
+  modal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
 }
 
