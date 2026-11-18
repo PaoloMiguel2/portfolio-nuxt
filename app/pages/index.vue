@@ -1,7 +1,6 @@
 <script setup>
 const url = useRequestURL()
 
-
 const title = 'Home | Paolo Miguel Pugeda'
 const description = 'Portfolio website of Paolo Miguel Pugeda'
 
