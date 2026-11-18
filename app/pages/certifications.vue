@@ -5,6 +5,7 @@ onMounted(() => {
    imageView()
 })
 
+const url = useRequestURL()
 const title = 'Certifications | Paolo Miguel Pugeda'
 const description = 'Certifications earned by Paolo Miguel Pugeda: IT Specialist Java, Word Associate, Excel Associate'
 
