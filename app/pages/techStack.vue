@@ -1,3 +1,28 @@
+<script setup>
+const url = useRequestURL()
+
+
+const title = 'Tech Stack | Paolo Miguel Pugeda'
+const description =
+  'Technologies and tools used by Paolo Miguel Pugeda in software development and web development'
+
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/java-logo.png`,
+  ogImageAlt: 'Java Logo',
+})
+</script> 
 
 <template> 
 

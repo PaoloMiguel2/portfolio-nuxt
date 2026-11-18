@@ -1,3 +1,27 @@
+<script setup>
+const url = useRequestURL()
+
+
+const title = 'Home | Paolo Miguel Pugeda'
+const description = 'Portfolio website of Paolo Miguel Pugeda'
+
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/profile-pic.png`,
+  ogImageAlt: 'Picture of Paolo Miguel Pugeda',
+})
+</script> 
 
 <template>
   

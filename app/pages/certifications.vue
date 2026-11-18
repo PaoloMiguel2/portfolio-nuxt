@@ -4,6 +4,27 @@ import { imageView } from '~/assets/script.js';
 onMounted(() => {
    imageView()
 })
+
+const title = 'Certifications | Paolo Miguel Pugeda'
+const description = 'Certifications earned by Paolo Miguel Pugeda: IT Specialist Java, Word Associate, Excel Associate'
+
+
+useHead({
+  title,
+  link: [{ rel: 'canonical', href: url.href }],
+})
+
+
+useSeoMeta({
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogType: 'website',
+  ogUrl: url.href,
+  ogImage: `${url.origin}/images/java_cert.png`,
+  ogImageAlt: 'Java Certification',
+})
+
 </script>
 <template>
 
